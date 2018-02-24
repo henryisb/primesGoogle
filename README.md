@@ -12,7 +12,9 @@ java -jar ./build/libs/prime-google-1.0-SNAPSHOT.jar
 
 ##Querying
 
-The prime number api is a GET at localhost:8080/primes/{number}/{algorithm}
+On port 8080
+
+The prime number api is a GET at /primes/{number}/{algorithm}
 
 With {algorithm} as an optional field - automatically returning the for loop algorithm.
 
