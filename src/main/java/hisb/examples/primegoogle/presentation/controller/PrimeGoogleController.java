@@ -38,7 +38,7 @@ public class PrimeGoogleController {
 
     PrimeOutput listOfPrimes = primeService.primeCalculation(number, algorithm);
 
-    return new ResponseEntity<PrimeOutput>(listOfPrimes, HttpStatus.ACCEPTED);
+    return new ResponseEntity<>(listOfPrimes, HttpStatus.ACCEPTED);
 
   }
 
@@ -58,7 +58,7 @@ public class PrimeGoogleController {
     GoogleQueryOutput googleResponse = googleQueryService.googleQuery(query);
     log.info("Controller from reponse : " + googleResponse.getResponse());
 
-    return new ResponseEntity<GoogleQueryOutput>(googleResponse, HttpStatus.ACCEPTED);
+    return new ResponseEntity<>(googleResponse, HttpStatus.ACCEPTED);
 
   }
 
